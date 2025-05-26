@@ -18,6 +18,9 @@ dnf -y copr enable ryanabx/cosmic-epoch
 dnf5 install -y cosmic-desktop
 dnf -y copr disable ryanabx/cosmic-epoch
 
+dnf config-manager addrepo --from-repofile=https://repository.mullvad.net/rpm/stable/mullvad.repo
+dnf5 install mullvad-vpn
+
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
