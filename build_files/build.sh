@@ -19,7 +19,7 @@ dnf5 install -y cosmic-desktop
 dnf -y copr disable ryanabx/cosmic-epoch
 
 dnf config-manager addrepo --from-repofile=https://repository.mullvad.net/rpm/stable/mullvad.repo
-dnf5 install mullvad-vpn
+dnf5 install -y mullvad-vpn
 
 # Use a COPR Example:
 #
