@@ -14,6 +14,11 @@ set -ouex pipefail
 # this installs a package from fedora repos
 dnf5 install -y tmux gnome-shell-extension-pop-shell
 
+# install phoenix
+dnf5 -y copr enable celenity/copr
+dnf5 -y install phoenix
+dnf5 -y copr disable celenity/copr
+
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
