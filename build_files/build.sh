@@ -12,11 +12,7 @@ set -ouex pipefail
 
 
 # this installs a package from fedora repos
-dnf5 install -y tmux 
-
-dnf -y copr enable ryanabx/cosmic-epoch
-dnf5 install -y cosmic-desktop
-dnf -y copr disable ryanabx/cosmic-epoch
+dnf5 install -y tmux gnome-shell-extension-pop-shell
 
 # Use a COPR Example:
 #
